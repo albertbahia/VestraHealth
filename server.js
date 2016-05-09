@@ -21,7 +21,7 @@ app.use(express.static(process.cwd() + '/public'));
 
 // Routes
 app.get('/', function(req, res) {
-  res.send('Hello World, this is Vestra Health!');
+  res.render('home');
 })
 
 // Listen to port
