@@ -7,14 +7,17 @@ var app = express();
 // Define server port
 var PORT = process.env.PORT || 8080;
 
-// ---Middleware---
-
+// --------MIDDLEWARE-------
+// Config and set up handlebars templating
+app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+app.set('view engine', 'handlebars');
 
 // Encode parsed data from forms and attach them a new `body` object via the req object in the routes
 app.use(bodyParser.urlencoded({extended: false}));
+
 // Serve static assets
 app.use(express.static(process.cwd() + '/public'));
-// -----End middleware------
+// -----END MIDDLEWARE------
 
 // Routes
 app.get('/', function(req, res) {
