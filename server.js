@@ -8,7 +8,6 @@ var PORT = process.env.PORT || 8080;
 
 // Routes
 app.get('/', function(req, res) {
-  if (err) throw err;
   res.send('Hello World!');
 })
 
