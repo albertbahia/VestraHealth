@@ -8,7 +8,7 @@ var PORT = process.env.PORT || 8080;
 
 // Routes
 app.get('/', function(req, res) {
-  res.send('Hello World!');
+  res.send('Hello World, this is Vestra Health!');
 })
 
 // Listen to port
