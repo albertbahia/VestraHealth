@@ -3,8 +3,8 @@ var bodyParser = require('body-parser')
 
 var app = express();
 
+// Define server port
 var PORT = process.env.PORT || 8080;
-
 
 // Routes
 app.get('/', function(req, res) {
