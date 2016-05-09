@@ -16,7 +16,7 @@ app.set('view engine', 'handlebars');
 app.use(bodyParser.urlencoded({extended: false}));
 
 // Serve static assets
-app.use(express.static(process.cwd() + '/public'));
+app.use(express.static('public'));
 // -----END MIDDLEWARE------
 
 // Routes
