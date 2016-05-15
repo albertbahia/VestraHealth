@@ -4,14 +4,14 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  /*margin: 0 auto;*/
-  /*height: 100%;*/
 }
 
 body {
   font-family: 'Roboto', sans-serif;
 }
 
-#login-fields {
-  float: right;
+.topcorner {
+  postion: absolute;
+  top: 0;
+  right: 0;
 }
