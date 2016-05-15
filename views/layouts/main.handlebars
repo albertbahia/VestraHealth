@@ -7,14 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!-- Custom styles -->
     <link rel="stylesheet" href="css/master.css"/>
-
   </head>
   <body>
-    <header>
-
-    </header>
-    {{{body}}}
-
+    <div id="login">
+      <div id="login-fields">
+        <input type="text" name="email" placeholder="Enter Email">
+        <input type="password" name="password">
+        <button type="submit">Submit</button>
+      </div>
+    </div>
+    <div class="main">
+      {{{body}}}
+    </div>
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
     <!-- Compiled and minified JavaScript -->
